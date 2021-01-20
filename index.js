@@ -18,7 +18,10 @@ function circle(radius,distanceFromCentre, angle){
 function main(){
     ctx.clearRect(0, 0, cvs.width, cvs.height);
     circle(200,0,0);
-    if(divider<24) divider+=0.1;
-    requestAnimationFrame(main);
+    if(divider<24) {
+        divider+=0.1;
+        requestAnimationFrame(main);
+    }
+
 }
 main();
